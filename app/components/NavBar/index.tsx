@@ -61,7 +61,7 @@ export const NavBar = () => {
       </div>
       <div className="navbar-end">
         {pathname === '/contact-us' ? (
-          <p>Contáctanos</p>
+          <div className="btn">Contáctanos</div>
         ) : (
           <Link className="btn" href="/contact-us">
             Contáctanos
