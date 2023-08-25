@@ -1,24 +1,20 @@
 'use client'
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 
 export const NavBar = () => {
-  const pathname = usePathname()
+  const router = useRouter()
 
   const MenuItems = () => {
     return (
       <>
-        <li>
-          {pathname === '/' ? <p>Inicio</p> : <Link href="/">Inicio</Link>}
+        <li onClick={() => router.push('/')}>
+          <p>Inicio</p>
         </li>
-        <li>
-          <a>Acerca de nosotros</a>
+        <li onClick={() => router.push('/about-us')}>
+          <p>Acerca de nosotros</p>
         </li>
-        <li>
-          <a>Experiencia</a>
-        </li>
-        <li>
+        <li onClick={() => router.push('/technologies')}>
           <a>Tecnologías</a>
         </li>
       </>
@@ -60,13 +56,9 @@ export const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        {pathname === '/contact-us' ? (
-          <div className="btn">Contáctanos</div>
-        ) : (
-          <Link className="btn" href="/contact-us">
-            Contáctanos
-          </Link>
-        )}
+        <div className="btn" onClick={() => router.push('/contact-us')}>
+          Contáctanos
+        </div>
       </div>
     </div>
   )
