@@ -1,5 +1,7 @@
 import Image from 'next/image'
+
 import ricardoProfile from '../../public/ricardo_profile.jpeg'
+import teamImg from '../../public/team.jpg'
 
 export default function AboutUsPage() {
   return (
@@ -28,9 +30,9 @@ export default function AboutUsPage() {
               </p>
             </div>
             <div className="w-full lg:w-8/12 ">
-              <img
+              <Image
+                src={teamImg}
                 className="w-full h-full"
-                src="https://www.businessalligators.com/wp-content/uploads/2019/08/IT-team-building.jpg"
                 alt="A group of People"
               />
             </div>
@@ -54,8 +56,7 @@ export default function AboutUsPage() {
             <div className="w-full lg:w-8/12 lg:pt-8">
               <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md">
                 <div className="p-4 pb-6 flex justify-center flex-col items-center">
-
-                  <Image 
+                  <Image
                     src={ricardoProfile}
                     alt="Ricardo VP"
                     width={200}
