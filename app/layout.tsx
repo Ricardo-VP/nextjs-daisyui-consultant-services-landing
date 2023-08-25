@@ -7,8 +7,8 @@ import { Footer, NavBar } from '@/components'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Ricardo Vaca - Software Consultant',
-  description: 'Software consultant services for your business',
+  title: 'Servicios de Consultoría en Tecnología',
+  description: 'Servicios de Consultoría en Tecnología para tu negocio',
 }
 
 export default function RootLayout({
