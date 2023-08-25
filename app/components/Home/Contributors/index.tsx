@@ -10,7 +10,7 @@ export const Contributors = () => {
     <section className="py-20 px-20 text-center">
       <div className="text-center">
         <h1 className="text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1]">
-          Nuestros colabarodores
+          Nuestros colaboradores
         </h1>
       </div>
       <div className="pt-5 mx-32 text-center text-gray-400">
